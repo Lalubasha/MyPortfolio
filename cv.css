@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #001005;
+    --text-color: white;
+    --main-color: #00f2ff;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 4rem 12%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover {
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+}
+.logo {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+.logo span {
+    color: var(--main-color);
+}
+.cv {
+    min-height: 100vh;
+    padding: 10rem 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cv h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.cv p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+.btn.download-cv {
+    background-color: var(--main-color);
+    color: #001005;
+}
+.btn.download-cv:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+}
+.footer {
+    padding: 5rem 12%;
+    background: var(--second-bg-color);
+    text-align: center;
+}
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+}
+.social-icon a:hover {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    transform: scale(1.2) translate(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 3rem 0;
+}
+.list li {
+    display: inline;
+    margin: 0 1rem;
+}
+.list a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+.list a:hover {
+    color: var(--main-color);
+}
+.footer p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .header {
+        padding: 4rem 5%;
+    }
+    .navbar {
+        position: fixed;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        height: calc(100vh - 100%);
+        background-color: var(--bg-color);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        display: none;
+        z-index: 99;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    .navbar a {
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+    #menu-icon {
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+        color: var(--text-color);
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem 5%;
+    }
+    .navbar {
+        width: 100%;
+        height: calc(100vh - 100%);
+    }
+    .navbar a {
+        margin: 1.5rem 0;
+        font-size: 1.8rem;
+    }
+    .hire, .contact {
+        padding: 8rem 5%;
+    }
+    .hire h2, .contact h2 {
+        font-size: 4.5rem;
+    }
+    .hire p, .contact-form label {
+        font-size: 1.8rem;
+    }
+    .hire .btn, .contact-form button {
+        padding: 1rem 2.5rem;
+        font-size: 1.8rem;
+    }
+    .footer {
+        padding: 3rem 0;
+    }
+    .footer .social-icon a {
+        font-size: 2.5rem;
+    }
+    .footer .list li {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        padding: 1.5rem 4%;
+    }
+    .navbar {
+        width: 100%;
+        height: calc(100vh - 100%);
+    }
+    .navbar a {
+        margin: 1rem 0;
+        font-size: 1.6rem;
+    }
+    .hire, .contact {
+        padding: 6rem 3%;
+    }
+    .hire h2, .contact h2 {
+        font-size: 4rem;
+    }
+    .hire p, .contact-form label {
+        font-size: 1.6rem;
+    }
+    .hire .btn, .contact-form button {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+    .footer {
+        padding: 2.5rem 0;
+    }
+    .footer .social-icon a {
+        font-size: 2rem;
+    }
+    .footer .list li {
+        margin: 0 0.8rem;
+    }
+}
