@@ -282,7 +282,7 @@
 }
 
 ::-webkit-scrollbar{
-  width: 20px;
+  width: 18px;
 }
 ::-webkit-scrollbar-thumb{
   background-color: var(--main-color);
@@ -296,7 +296,7 @@
 /* Project css */
 .heading{
   text-align: center;
-  font-size: 7rem;
+  font-size: 5rem;
   margin: 5rem 0;
 }
 .projects{
@@ -425,6 +425,7 @@
   padding: 5rem;
 }
 
+
 .certification-info i {
   font-size: 8rem;
 }
@@ -510,9 +511,10 @@
 @media (max-width: 1024px) {
   #menu-icon {
     display: block;
+    font-size: 3rem;
     cursor: pointer; /* Added cursor pointer for better UX */
   }
-
+  
   .navbar {
     position: absolute;
     top: 100%;
@@ -555,6 +557,7 @@
   }
 
   .about {
+    
     flex-direction: column-reverse;
     text-align: center;
     padding: 5rem 2%; /* Adjusted padding for better spacing */
@@ -571,7 +574,7 @@
   }
 
   .about-content {
-    max-width: 90%; /* Adjusted max-width for better content layout */
+    max-width: 100%; /* Adjusted max-width for better content layout */
   }
 
   .Contact form {
