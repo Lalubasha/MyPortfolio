@@ -12,6 +12,11 @@ html {
     font-size: 60%;
     overflow-x: hidden;
 }
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+  }
 :root {
     --bg-color: #080808;
     --second-bg-color: #001005;
@@ -53,7 +58,7 @@ body {
 }
 .logo {
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--text-color);
     cursor: pointer;
     transition: 0.3s ease;

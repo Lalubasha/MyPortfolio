@@ -43,7 +43,7 @@
   }
   .logo{
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--text-color);
     cursor: pointer;
     transition: 0.3s ease;
@@ -55,10 +55,10 @@
     color: var(--main-color);
   }
   .navbar a{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--text-color);
     margin-left: 4rem;
-    font-weight: 500;
+    font-weight: 300;
     padding-bottom: 0.5rem;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
@@ -318,7 +318,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--main-color);
-  height: 600px;
+  height: 650px;
   border-radius: 3rem;
   cursor: pointer;
   border: 5px solid transparent;
@@ -402,7 +402,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--main-color);
-  height: 600px;
+  height: 650px;
   border-radius: 3rem;
   cursor: pointer;
   border: 5px solid transparent;

@@ -42,7 +42,7 @@ body {
 
 .logo {
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--text-color);
   cursor: pointer;
   transition: 0.3s ease;
